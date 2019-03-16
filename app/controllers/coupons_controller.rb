@@ -8,6 +8,7 @@ class CouponsController < ApplicationController
 
   def create
     @coupon = Coupon.create(params[:coupon])
+    redirect_to @coupon
   end
 
   def show
